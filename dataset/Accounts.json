@@ -1,0 +1,30 @@
+{
+	"name": "Accounts",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jssugcrm01",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "backup"
+		},
+		"type": "DynamicsEntity",
+		"structure": [
+			{
+				"name": "accountid",
+				"type": "Guid"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "accountnumber",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"entityName": "account"
+		}
+	}
+}

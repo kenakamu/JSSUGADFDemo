@@ -1,0 +1,35 @@
+{
+	"name": "FileAccount",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jssugsqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "backup"
+		},
+		"type": "FileShare",
+		"structure": [
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "AccountNumber"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": true
+			},
+			"fileName": "Account.csv",
+			"folderPath": "Dynamics"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"name": "SqlAccountType",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jssugsqldynamics",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "backup"
+		},
+		"type": "SqlServerTable",
+		"structure": [
+			{
+				"name": "Accountnumber",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"tableName": "AccountType"
+		}
+	}
+}

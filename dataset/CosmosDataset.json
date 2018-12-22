@@ -1,0 +1,30 @@
+{
+	"name": "CosmosDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jssugcosmos",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "backup"
+		},
+		"type": "DocumentDbCollection",
+		"structure": [
+			{
+				"name": "opportunityid",
+				"type": "Guid"
+			},
+			{
+				"name": "estimatedvalue",
+				"type": "Decimal"
+			},
+			{
+				"name": "fullname",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"collectionName": "dynamicsdata"
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"name": "Opportunities",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jssugcrm01",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "backup"
+		},
+		"type": "DynamicsEntity",
+		"structure": [
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "estimatedvalue",
+				"type": "Decimal"
+			},
+			{
+				"name": "opportunityid",
+				"type": "Guid"
+			},
+			{
+				"name": "transactioncurrencyid",
+				"type": "Guid"
+			},
+			{
+				"name": "contact.fullname",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"entityName": "opportunity"
+		}
+	}
+}
