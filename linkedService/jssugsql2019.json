@@ -1,0 +1,16 @@
+{
+	"name": "jssugsql2019",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=jssugsql2019;initial catalog=AdventureWorks2016",
+			"userName": "kenakamu",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2NDc4ZTgyZC1kNjY5LTRlNTQtOWQyMC0yNDE5ZGI4ZGQwMmUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
